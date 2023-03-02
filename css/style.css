@@ -1,0 +1,247 @@
+:root {
+    --bs-main: #356735;
+    --bs-sec: #eaebea;
+    --footer-widget: #318331;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: var(--bs-main);
+    font-weight: 600;
+}
+
+.navbar-brand,
+.navbar .nav-link {
+    color: var(--bs-sec) !important;
+    text-transform: capitalize;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar .nav-link {
+    margin-right: 1rem;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+    color: white !important;
+}
+
+.navbar .active {
+    border-bottom: 2px solid var(--bs-sec);
+    display: inline-block;
+}
+
+.navbar .active:hover {
+    border-bottom-color: white;
+}
+
+.btn {
+    border-radius: 3px !important;
+    font-weight: 600;
+}
+
+.btn-sec {
+    color: var(--bs-main);
+    background-color: var(--bs-sec);
+}
+
+.btn-main {
+    color: var(--bs-sec);
+    background-color: var(--bs-main);
+}
+
+.btn-sec:hover {
+    background-color: white;
+    color: var(--bs-main);
+}
+
+.btn-main:hover {
+    opacity: 0.9 !important;
+    background-color: var(--bs-main);
+    color: white;
+}
+
+.navbar-toggler {
+    color: var(--bs-main);
+    background-color: var(--bs-sec);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    background: url("../images/back-img.jpg") no-repeat 0, 0;
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+}
+
+.hero .container {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: var(--bs-main);
+    opacity: 0.5;
+}
+
+.section-title {
+    text-transform: capitalize;
+    color: var(--bs-main);
+    margin-bottom: 0.7rem;
+}
+
+.section-title h1 {
+    font-size: 26px !important;
+    border-bottom: 2px solid var(--bs-main);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    background-color: var(--bs-main);
+    color: var(--bs-sec);
+    padding: 0.3rem 0.45rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.social-media a:hover {
+    opacity: 0.8;
+}
+
+.plans .card {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.plans .card-header {
+    background-color: var(--bs-main);
+    color: var(--bs-sec);
+}
+
+.plans .title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.plans .price {}
+
+.card-body {
+    background-color: var(--bs-sec);
+}
+
+.card-body div {
+    border-bottom: 1px solid var(--bs-main);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body span {
+    color: var(--bs-main);
+}
+
+.accordion-header button,
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-main);
+    color: var(--bs-sec);
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.accordion-item {
+    border: 1px solid var(--bs-main);
+    border-bottom: 2px solid var(--bs-sec);
+}
+
+.accordion-item:last-child {
+    border-bottom: 0 !important;
+}
+
+.accordion-body {
+    background-color: var(--bs-sec);
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: none !important;
+}
+
+.widget {
+    background-color: var(--footer-widget);
+}
+
+.copyright {
+    text-align: center;
+    background-color: var(--bs-main);
+    color: var(--bs-sec);
+    text-transform: capitalize;
+}
+
+.footer {
+    color: var(--bs-sec);
+}
+
+.footer .section-title {
+    color: var(--bs-sec);
+    font-weight: 600;
+}
+
+.footer .section-title h1 {
+    border-bottom-color: var(--bs-sec);
+}
+
+.widget .row:first-child div {
+    margin-bottom: 0.7rem;
+}
+
+.widget .row:last-child a {
+    text-decoration: none;
+    color: var(--bs-sec);
+    text-transform: capitalize;
+}
+
+.widget .row:last-child a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 991px) {
+    .navbar .navbar-nav:last-child .active {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .hero p {
+        font-size: 19px;
+    }
+}
